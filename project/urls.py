@@ -21,5 +21,10 @@ from Bike.views import BikeAPI
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/main', API.as_view({'post': 'handle_request'}))
+    path('api/main', API.as_view({'post': 'handle_request'})),
+    path('api/register', Register.as_view({'post': 'handle_request'})),
+    path('api/login', Login.as_view({'post': 'handle_request'})),
+    path('api/start_ride', StartRide.as_view({'post': 'handle_request'})),
+    path('api/finish_ride', FinishRide.as_view({'post': 'handle_request'})),
+    path('api/bike', BikeAPI.as_view({'post': 'handle_request'})),
 ]
