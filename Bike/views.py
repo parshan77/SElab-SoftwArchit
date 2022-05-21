@@ -13,7 +13,7 @@ class BikeAPI(viewsets.ViewSet):
             req = request.data['request']
         except KeyError:
             return HttpResponse('Required fields are empty!!!', status=406)
-        
+
         try:
             user = User.objects.get(token=token)
         except:
