@@ -1,3 +1,3 @@
 # SElab-SoftwArchit
 
-todo: add screenshots
+add screenshots
